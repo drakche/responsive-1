@@ -1,0 +1,19 @@
+[
+  {
+    "mediaType":"image",
+    "thumbSrc":"/assets/images/2.png",
+    "rank":2
+  },
+  {
+    "mediaType":"image",
+    "thumbSrc":"/assets/images/3.png",
+    "rank":3
+  },
+  {
+    "mediaType":"video",
+    "provider":"youtube",
+    "videoSrc":"dNFrZNjs2ng",
+    "thumbSrc":"http://img.youtube.com/vi/dNFrZNjs2ng/0.jpg",
+    "rank":1
+  }
+]

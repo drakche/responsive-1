@@ -1,0 +1,120 @@
+nav.navbar.navbar-default {
+  font-family: $font-body;
+  height: 100%;  
+  margin:0;
+  padding-top: 45px;
+  padding-left: 54px;
+  background-color: $navbar-custom-color;
+  .navbar-collapse.in{
+    width: 100%;
+    background-color: $navbar-custom-color;
+    padding:0;
+    ul{
+      margin: 0;
+      li{
+        padding: 15px 0 15px 0; 
+        &:hover, &:focus{
+          background-color: $navbar-custom-clickable;
+        }
+      }
+      
+    }
+  }
+  a {
+    font-size: 15px;
+    line-height: 15px;
+    color: #ebebeb; 
+    padding-top:0;
+    padding-bottom:0;
+    text-transform: uppercase;
+    &:hover, &:focus{
+      color: #fff;
+    }   
+  }
+}
+@media all and (max-width: 639px) and (min-width: 320px) {
+
+  nav.navbar.navbar-default {
+    font-family: $font-header;
+    padding-top: 28px;
+    padding-left: 38px;
+
+    a {
+      line-height: 17px;
+      font-size: 17px;
+      text-transform: none;
+    }
+    .container-fluid{
+      padding:0;
+      .navbar-brand{
+       content: "Navigate";
+      }
+    }
+
+    button.navbar-toggle{
+      background-color: #202529;
+      border: 0;
+      margin-top: -29px;
+      padding-left: 28px;
+      border-radius:0;
+      height: 74px;
+      width: 84px;
+      &:hover, &:focus{
+        color: #fff;
+        background-color: #202529;
+
+        span.icon-bar{
+          background-color: #fff;
+        }
+      }
+
+      span.icon-bar{
+        background-color: #ebebeb; 
+      }
+    }
+  }
+}
+@media all and (max-width: 319px) {
+
+  nav.navbar.navbar-default {
+    font-family: $font-header;
+    padding-top: 14px;
+    padding-left:19px;
+    min-height: 37px;
+    a {
+      line-height: 12px;
+      font-size: 12px;
+      text-transform: none;
+    }
+    .container-fluid{
+      padding:0;
+      .navbar-brand{
+        height: 12px;
+      }
+    }
+    
+    button.navbar-toggle{
+      background-color: #202529;
+      border: 0;
+      margin-top: -15px;
+      padding-left: 11px;
+      border-radius:0;
+      height: 37px;
+      width: 41px;
+      &:hover, &:focus{
+        color: #fff;
+        background-color: #202529;
+
+        span.icon-bar{
+          background-color: #fff;
+        }
+      }
+
+      span.icon-bar{
+        background-color: #ebebeb; 
+      }
+    }
+
+  }
+}
+

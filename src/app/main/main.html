@@ -1,0 +1,84 @@
+<div class="container">
+
+  <div class="custom-navbar">
+    <acme-navbar></acme-navbar>
+  </div>
+  <div class="row cyan">
+    <div class="row title">
+      <div class="col-md-9 col-sm-9 col-xs-9">
+        <span>Claritas est etiam processus dynamicys, qui.</span>
+      </div>
+    </div>
+    <div class="row sub-title">
+     <div class="col-md-9 col-sm-9 col-xs-9">
+      <span class="gray">Eodem modo typi</span>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </div>
+  </div>
+</div>
+<div class="row black">
+  <div class="col-md-9 col-sm-9 col-xs-9">
+    <span>Lorem impsum dolomet</span>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3 magenta">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </div>
+</div>
+<div class="row gallery ">
+
+  <div class="hidden-xs">
+    <div class="col-md-4 col-lg-4 col-sm-4" ng-repeat="src in vm.mediaSources | orderBy:'rank'">
+      <div ng-class="src.mediaType">
+        <div class="overlay" ng-if="src.mediaType==='video'" ng-click="vm.openVideo(src)">
+          <span class="glyphicon glyphicon-play-circle"></span>
+        </div>
+        <img src="" ng-src="{{src.thumbSrc}}" alt="">
+      </div>
+    </div>
+  </div> 
+  <div class="visible-xs">
+    <ul rn-carousel rn-carousel-index="vm.carouselIndex" class="image">
+      <li ng-repeat="src in vm.mediaSources | orderBy:'rank'">
+        <div class="layer">
+          <div ng-class="src.mediaType">
+            <div class="overlay" ng-if="src.mediaType==='video'" ng-click="vm.openVideo(src)">
+              <span class="glyphicon glyphicon-play-circle"></span>
+            </div>
+            <img src="" ng-src="{{src.thumbSrc}}" alt="">
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div rn-carousel-indicators slides="vm.mediaSources" class="indicators" rn-carousel-index="vm.carouselIndex"></div>
+  </div> 
+</div>
+
+<div class="row text">
+  <div class="col-md-12">
+    <h2>Eodem modi typi</h2>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices ex finibus felis posuere, id lobortis mi tempor. Phasellus imperdiet libero non lectus eleifend facilisis. Curabitur eros dui, vehicula et risus bibendum, luctus fermentum lorem. Quisque viverra, orci non laoreet porta, purus sapien euismod diam, ut mattis nisi metus vitae quam. Donec sollicitudin hendrerit porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non sollicitudin leo, feugiat malesuada neque. Cras auctor felis at nunc posuere tempus in non odio.
+    </p>
+    <p>
+      Duis iaculis massa magna, eget consectetur enim tempor sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse ut odio a neque gravida maximus non a leo. Nam non diam dignissim, pharetra ipsum nec, elementum eros. Praesent eget mi faucibus risus porttitor efficitur. Quisque vitae rutrum felis, vulputate luctus ipsum. Nam leo velit, lobortis facilisis magna eleifend, vehicula varius nibh.
+    </p>
+    <p>    
+      Mauris quis vehicula ante, ut maximus dui. Sed blandit ullamcorper cursus. In vehicula nec quam non bibendum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elementum nisl eu lacus eleifend dapibus. Proin sodales, tortor id blandit dapibus, eros nisi suscipit nulla, id vestibulum erat nulla ac diam. Etiam sit amet odio sagittis, tristique quam tincidunt, placerat mauris.
+    </p>
+  </div>
+  <div class="col-md-6  col-sm-12">
+    <p>  
+      Nam ornare, diam sit amet ultrices vulputate, magna ante suscipit ligula, nec eleifend dolor nulla vitae diam. Suspendisse iaculis dictum quam, et tincidunt sem tempus eu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vel nisi sollicitudin, vulputate augue at, lobortis tortor. Sed quis maximus magna, et mattis lectus. Mauris faucibus eleifend nisl, sit amet iaculis erat. Nullam felis erat, congue a condimentum ut, bibendum posuere eros. Cras condimentum tincidunt feugiat. Proin eu scelerisque ex. Integer commodo dui sed mi pellentesque gravida. Curabitur nec elit quam. Nulla massa urna, imperdiet vitae quam sed, viverra aliquet ligula. Maecenas molestie orci quis neque feugiat, porta malesuada nunc finibus. Duis ut libero laoreet, pulvinar nisl a, venenatis est. Vestibulum auctor lorem ut suscipit hendrerit. Nullam consectetur molestie sapien, ut sagittis risus iaculis sed.
+    </p>
+    <p>
+      Praesent convallis volutpat elit vel sodales. Curabitur blandit elit ac leo vestibulum fermentum. Nullam quis fermentum velit. Nullam tortor eros, viverra id eleifend vitae, pulvinar id enim. Vestibulum non accumsan magna. Nullam posuere magna quis neque feugiat, vel vestibulum velit feugiat. Morbi nec nisi a lectus dapibus malesuada vitae a sem. Nam dictum, tellus sit amet dictum placerat, erat nisi viverra mauris, ut consequat nulla leo quis ante. Morbi sed nisl id lorem faucibus bibendum non sed quam. Integer porta gravida elit, vehicula fringilla leo fermentum viverra.
+    </p>
+    
+  </div>
+</div>
+
+</div>

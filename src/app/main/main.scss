@@ -1,0 +1,225 @@
+.row {
+  margin: 0;
+  &.cyan {
+    height: 577px;
+    background-color:#0ca3b9;
+    color: #fff;
+    padding-top: 201px;
+    padding-left: 85px;   
+    .title {      
+      font-size: 50px;
+    }
+
+    .sub-title {
+      margin-top: 65px; 
+      font-size: 26px;    
+      .gray {             
+        color:#89d5de;
+      }
+      span {
+        color:#fff;
+      }         
+    }
+
+    @media all and (max-width: 1023px) and (min-width: 980px) {
+      height: 550px;
+      padding-left: 70px;
+      padding-top: 188px;
+      .title {      
+
+        font-size: 44px;
+
+      }
+      .sub-title {
+        margin-top: 65px;     
+        font-size: 24px;          
+        
+      }
+    }
+
+    @media all and (max-width: 979px) and (min-width: 640px) {
+      height: 348px;
+      padding-left: 52px;
+      padding-top: 115px;
+      .title{
+        font-size: 29px;
+      }
+      .sub-title {
+        margin-top: 65px;     
+        font-size: 17px;          
+        
+      }
+    }
+
+    @media all and (max-width: 639px) and (min-width: 320px) {
+      height: 348px;
+      padding-left: 52px;
+      padding-top: 100px;
+      .title{
+        font-size: 20px;
+      }
+      .sub-title {
+        margin-top: 30px;     
+        font-size: 17px;          
+        
+      }
+    }
+
+    @media all and (max-width: 319px) {
+      height: 176px;
+      padding-left: 27px;
+      padding-top: 30px;
+      .title{
+        font-size: 17px;
+      }
+      .sub-title {
+        margin-top: 20px;     
+        font-size: 11px;
+      }
+    }
+  }
+
+  &.black{
+    height: 248px;
+    background-color: #27212c;
+    line-height: 248px;
+    div{
+      padding-left: 85px;   
+      height: 100%;
+      span{
+        color: #9b8aa9;
+        font-size: 26px;
+      }
+      &.magenta{
+        font-size:40px;
+        background-color: #bc3183;
+        text-align: center;
+        padding:0;
+        span{
+          color: #fff;          
+        }
+      }     
+    }
+
+    @media all and (max-width: 1023px) and (min-width: 980px) {
+      height: 244px;
+      line-height: 244px;
+      div{
+        padding-left: 70px;   
+        span{
+          font-size: 22px;
+        }
+        &.magenta{
+          font-size:40px;
+        } 
+      }
+    }
+
+    @media all and (max-width: 979px) and (min-width: 640px) {
+      height: 150px;
+      line-height: 150px;
+      div{
+        padding-left: 52px;   
+        span{
+          font-size: 15px;
+        }
+        &.magenta{
+          font-size: 25px;
+        } 
+      }
+    }
+
+    @media all and (max-width: 639px) and (min-width: 320px) {
+      height: 150px;
+      line-height: 150px;
+      div{
+        padding-left: 52px;   
+        span{
+          font-size: 15px;
+        }
+        &.magenta{
+          font-size: 25px;
+        } 
+      }
+    }
+
+    @media all and (max-width: 319px) {
+      height: 72px;
+      line-height: 72px;
+      div{
+        padding-left: 27px;   
+        span{
+          font-size: 10px;
+        }
+        &.magenta{
+          font-size:15px;
+        } 
+      }
+    }
+  }
+  
+
+  &.gallery{
+    height: 290px;
+    overflow: hidden;
+    ul{
+      height: 290px;
+    }
+    .indicators{
+      position: absolute;
+      bottom: 0px;      
+      left: 0px;
+      right: 0px;      
+      text-align: center;      
+      height: 20px;
+    }
+    div{
+      padding: 0;
+      overflow: hidden;      
+      position: relative;
+      height: 290px;
+      div.overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: #5b0fa1;
+        opacity: 0.5;
+        text-align: center;
+        .glyphicon{
+          line-height: 290px;
+          color: #fff;
+          font-size: 150px;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+
+      }
+
+      img{
+        height: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &.text{
+    padding: 55px 80px;
+    font-family: $font-header;
+    background-color: #ebebeb;
+    font-size: 10px;
+    h2{
+      font-size:20px;
+      color: #088ca5;
+      margin-bottom: 34px;
+    }
+  }
+}
