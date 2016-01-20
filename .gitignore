@@ -5,7 +5,6 @@ coverage/
 .sass-cache/
 .idea/
 .tmp/
-dist/
 
 # Logs
 logs
