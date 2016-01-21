@@ -10,7 +10,20 @@ import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service'
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 
-angular.module('deployTask', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'angular-carousel'])
+angular.module('deployTask', ['ngAnimate', 
+  'ngCookies', 
+  'ngTouch', 
+  'ngSanitize', 
+  'ngMessages', 
+  'ngAria', 
+  'ngResource', 
+  'ui.router', 
+  'ui.bootstrap', 
+  'toastr', 
+  'angular-carousel',
+  'ngDialog',
+  'youtube-embed'
+  ])
   .constant('malarkey', malarkey)
   .constant('moment', moment)
   .config(config)
