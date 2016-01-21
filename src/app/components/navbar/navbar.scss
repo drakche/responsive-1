@@ -4,20 +4,26 @@ nav.navbar.navbar-default {
   margin:0;
   padding-top: 45px;
   padding-left: 54px;
+  border: 0 !important;
   background-color: $navbar-custom-color;
-  .navbar-collapse.in{
+  .navbar-collapse{
+  &.in, &.collapsing{
     width: 100%;
     background-color: $navbar-custom-color;
     padding:0;
+    margin:0;
     ul{
       margin: 0;
       li{
+        @media all and (min-width: 641px) {
+          padding: 0;
+        }
         padding: 15px 0 15px 0; 
         &:hover, &:focus{
           background-color: $navbar-custom-clickable;
         }
       }
-      
+    }    
     }
   }
   a {
@@ -37,24 +43,34 @@ nav.navbar.navbar-default {
   nav.navbar.navbar-default {
     font-family: $font-header;
     padding-top: 28px;
-    padding-left: 38px;
-
+    padding-left: 0;
+    
+    .navbar-header{
+      padding-left:38px;
+    }
+    
     a {
       line-height: 17px;
       font-size: 17px;
-      text-transform: none;
+      text-transform: none;      
     }
     .container-fluid{
       padding:0;
       .navbar-brand{
        content: "Navigate";
+       height:100%;
+       padding-left:0;
       }
     }
-
+    .navbar-collapse{
+      border-top: 0 !important;
+      box-shadow: none;
+    }
     button.navbar-toggle{
       background-color: #202529;
       border: 0;
       margin-top: -29px;
+      margin-bottom:0;
       padding-left: 28px;
       border-radius:0;
       height: 74px;
@@ -79,7 +95,11 @@ nav.navbar.navbar-default {
   nav.navbar.navbar-default {
     font-family: $font-header;
     padding-top: 14px;
-    padding-left:19px;
+     padding-left: 0;
+    
+    .navbar-header{
+      padding-left:19px;
+    }
     min-height: 37px;
     a {
       line-height: 12px;
@@ -93,10 +113,15 @@ nav.navbar.navbar-default {
       }
     }
     
+    .navbar-collapse{
+      border-top: 0 !important;
+      box-shadow: none;
+    }
     button.navbar-toggle{
       background-color: #202529;
       border: 0;
       margin-top: -15px;
+      margin-bottom: 0;
       padding-left: 11px;
       border-radius:0;
       height: 37px;
