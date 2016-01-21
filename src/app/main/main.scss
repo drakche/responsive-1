@@ -251,8 +251,12 @@
     background-color: #5b0fa1 !important;
     border-radius:0 !important;
     color: #fff !important;
-    right: 0 !important; 
+    right: -35px !important; 
     top: 0 !important;
+    @media all and(max-width:711px){
+      right: 0 !important; 
+      top: -35px !important;
+    }
     height: 35px !important;
     width: 35px !important;
     line-height: 35px !important;
