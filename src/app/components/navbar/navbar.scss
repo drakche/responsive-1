@@ -8,7 +8,7 @@ nav.navbar.navbar-default {
   background-color: $navbar-custom-color;
   .navbar-collapse{
   &.in, &.collapsing{
-    width: 100%;
+    // width: 100%;
     background-color: $navbar-custom-color;
     padding:0;
     margin:0;
@@ -22,6 +22,18 @@ nav.navbar.navbar-default {
         padding: 15px 0 15px 0; 
         &:hover, &:focus{
           background-color: $navbar-custom-clickable;
+        }
+        @media all and (min-width: 321px) and (max-width: 640px){
+          a{
+            padding:0 23px;
+          }
+          
+        }
+        @media all and (max-width: 320px){
+          a{
+            padding:0 19px;
+          }
+          
         }
       }
     }    
