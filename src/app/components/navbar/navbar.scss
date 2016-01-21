@@ -12,6 +12,7 @@ nav.navbar.navbar-default {
     background-color: $navbar-custom-color;
     padding:0;
     margin:0;
+    overflow-y: hidden;
     ul{
       margin: 0;
       li{
