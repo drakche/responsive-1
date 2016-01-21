@@ -21,7 +21,7 @@
       }         
     }
 
-    @media all and (max-width: 1023px) and (min-width: 980px) {
+    @media all and (max-width: 1024px) and (min-width: 981px) {
       height: 550px;
       padding-left: 70px;
       padding-top: 188px;
@@ -37,7 +37,7 @@
       }
     }
 
-    @media all and (max-width: 979px) and (min-width: 640px) {
+    @media all and (max-width: 980px) and (min-width: 641px) {
       height: 348px;
       padding-left: 52px;
       padding-top: 115px;
@@ -51,7 +51,7 @@
       }
     }
 
-    @media all and (max-width: 639px) and (min-width: 320px) {
+    @media all and (max-width: 640px) and (min-width: 321px) {
       height: 348px;
       padding-left: 52px;
       padding-top: 100px;
@@ -65,7 +65,7 @@
       }
     }
 
-    @media all and (max-width: 319px) {
+    @media all and (max-width: 320px) {
       height: 176px;
       padding-left: 27px;
       padding-top: 30px;
@@ -101,7 +101,7 @@
       }     
     }
 
-    @media all and (max-width: 1023px) and (min-width: 980px) {
+    @media all and (max-width: 1024px) and (min-width: 981px) {
       height: 244px;
       line-height: 244px;
       div{
@@ -115,7 +115,7 @@
       }
     }
 
-    @media all and (max-width: 979px) and (min-width: 640px) {
+    @media all and (max-width: 980px) and (min-width: 641px) {
       height: 150px;
       line-height: 150px;
       div{
@@ -129,7 +129,7 @@
       }
     }
 
-    @media all and (max-width: 639px) and (min-width: 320px) {
+    @media all and (max-width: 640px) and (min-width: 321px) {
       height: 150px;
       line-height: 150px;
       div{
@@ -143,7 +143,7 @@
       }
     }
 
-    @media all and (max-width: 319px) {
+    @media all and (max-width: 320px) {
       height: 72px;
       line-height: 72px;
       div{
@@ -201,6 +201,7 @@
 
       img{
         height: 100%;
+        width: 100%;
         position: absolute;
         margin: auto;
         top: 0;
@@ -211,12 +212,27 @@
     }
   }
 
-  &.text{
+  &.text {
     padding: 55px 80px;
-    font-family: $font-header;
+    @media all and (max-width: 1024px) and (min-width: 981px) {
+       padding: 55px 55px;
+    }
+
+    @media all and (max-width: 980px) and (min-width: 641px) {
+       padding: 55px 55px;
+    }
+
+    @media all and (max-width: 640px) and (min-width: 321px) {
+       padding: 50px 50px;
+    }
+
+    @media all and (max-width: 320px) {
+       padding: 40px 36px;
+    }
     background-color: #ebebeb;
-    font-size: 10px;
+    font-size: 12px;
     h2{
+      font-family: $font-header;    
       font-size:20px;
       color: #088ca5;
       margin-bottom: 34px;

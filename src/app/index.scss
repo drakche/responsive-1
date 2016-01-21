@@ -8,9 +8,9 @@
 $font-header: "Miryad Pro", regular, sans-serif;	
 $font-body: 'Montserrat', sans-serif;
 
-$screen-xs: 320px;
-$screen-sm: 640px;
-$screen-md: 980px;
+$screen-xs: 321px;
+$screen-sm: 641px;
+$screen-md: 981px;
 $screen-lg: 1024px;
 
 $navbar-custom-color: #373c3f;
@@ -29,7 +29,7 @@ body{
 	.container{
 		width: 1024px;	
 		padding: 0;
-		@media all and (max-width: 1023px){
+		@media all and (max-width: 1024px){
 			width: 100%;
 			padding:0;			
 		}
@@ -37,14 +37,14 @@ body{
 	.custom-navbar{
 		height: 97px;
 		width: 1024px;	
-		@media all and (max-width: 1023px){
+		@media all and (max-width: 1024px){
 			width: 100%;
 
 		}
-		@media all and (max-width: 639px) and (min-width: 320px) {
+		@media all and (max-width: 640px) and (min-width: 321px) {
 			height: 74px;
 		}
-		@media all and (max-width: 319px) {
+		@media all and (max-width: 320px) {
 			height: 37px;
 		}
 	}

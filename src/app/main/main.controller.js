@@ -15,6 +15,10 @@ export class MainController {
     });
   }
 
+  clickPlaceholder(){
+    this.$log.info('Field clicked');
+  }
+
   openVideo(src){
     this.$scope.videoSrc = src.videoSrc;  
     this.$scope.playerVars = {
