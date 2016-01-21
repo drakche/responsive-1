@@ -43,8 +43,8 @@
       <li ng-repeat="src in vm.mediaSources | orderBy:'rank'">
         <div class="layer">
           <div ng-class="src.mediaType">
-            <div class="overlay" ng-if="src.mediaType==='video'" ng-click="vm.openVideo(src)">
-              <span class="glyphicon glyphicon-play-circle"></span>
+            <div class="overlay" ng-if="src.mediaType==='video'">
+              <span class="glyphicon glyphicon-play-circle" ng-click="vm.openVideo(src)"></span>
             </div>
             <img src="" ng-src="{{src.thumbSrc}}" alt="">
           </div>
