@@ -1,4 +1,7 @@
 # responsive-1
 
-```npm install```
-```bower install```
+Installation procedure for running the application
+
+* ```npm install```
+* ```bower install```
+
